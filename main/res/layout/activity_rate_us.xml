@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBA8A8"
+    tools:context=".RateUs">
+    <Button
+        android:id="@+id/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B56060"
+        android:text="back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback Form"
+        android:layout_below="@+id/back"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv"
+        android:layout_margin="10dp"
+        android:textSize="35sp"/>
+
+        <ImageView
+        android:layout_below="@id/tv"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="250dp"
+        android:src="@drawable/a"
+        android:id="@+id/iv"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#EBA36804"
+        android:id="@+id/rb"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:numStars="5"
+        android:rating="1.5" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/rb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:ems="50"
+        android:hint="Thanks for your feedback"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/bt"
+        android:layout_below="@id/feedback"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="Sumbit"
+        android:textAllCaps="false"
+        android:backgroundTint="#B56060"/>
+
+
+</RelativeLayout>
